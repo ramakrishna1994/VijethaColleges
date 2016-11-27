@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_1"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_2"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Faculty" />
+        <item
+            android:id="@+id/nav_3"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Programs &amp; Videos" />
+        <item
+            android:id="@+id/nav_4"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="News &amp; Events" />
+        <item
+            android:id="@+id/nav_5"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Placements" />
+        <item
+            android:id="@+id/nav_6"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="branches" />
+        <item
+            android:id="@+id/nav_7"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="College Info" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

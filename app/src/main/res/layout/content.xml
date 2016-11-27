@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="vijetha.goodcreed.com.vijethacolleges.Home"
+    tools:showIn="@layout/app_bar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+            </com.daimajia.slider.library.Indicators.PagerIndicator>
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/custom_indicator"
+                android:layout_toEndOf="@+id/custom_indicator">
+
+            </com.daimajia.slider.library.SliderLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_light_background"
+                android:layout_below="@+id/slider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="14dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Welcome to Vijetha Junior and Degree College"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/tv"/>
+
+                <TextView
+                    android:text="Welcome to Vijetha Junior and Degree College, an Institute that is not made by mere Bricks &amp; Stones but by the strong character and integrity it insists in its students. We at Vijetha belive in a Philosophy that education doesn't lie in the accumulation of knowledge but lies in the quality of knowledge that helps for developing the character of the students."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="228dp"
+                    android:id="@+id/textView2"
+                    android:textAlignment="center"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="208dp"
+                    app:srcCompat="@drawable/home_card_image"
+                    android:id="@+id/imageView2"
+                    android:paddingTop="45dp"
+                    />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
